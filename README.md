@@ -1,39 +1,25 @@
-# OpenAIPowerPointGenerator
+# GhostGenerator
 
-A tool to generate PowerPoint presentations using OpenAI.
+A tool to generate PowerPoint presentations using Gemini
+
+## How it works
+
+This tool uses a proxy so basically it uses the openai api for communicating in the library but has a custom url to send requests which then translates it to the gemini api
 
 ## Installation Instructions
 
-Follow the steps below to set up and run the OpenAIPowerPointGenerator:
+Follow the steps below to set up and run the GhostGenerator;
 
 ### 1. Clone the Repository
 
 Begin by cloning the repository to your local machine:
 
 ```bash
-git clone https://github.com/noahyoungs/OpenAIPowerPointGenerator.git
-cd OpenAIPowerPointGenerator
+git clone https://github.com/The-UnknownHacker/GhostGenerator.git
+cd GhostGenerator
 ```
 
-### 2. Create a Python 3.8 Environment named `openai_ppt_generator_env`
-
-Ensure you have Python 3.8 installed. Create the virtual environment named `openai_ppt_generator_env` and activate it:
-
-**For macOS and Linux:**
-
-```bash
-python3 -m venv openai_ppt_generator_env
-source openai_ppt_generator_env/bin/activate
-```
-
-**For Windows:**
-
-```bash
-python -m venv openai_ppt_generator_env
-.\openai_ppt_generator_env\Scripts\activate
-```
-
-Once activated, install the required packages using `requirements.txt`:
+## 3 -  Install the required packages using `requirements.txt`:
 
 ```bash
 pip install -r requirements.txt
@@ -41,15 +27,15 @@ pip install -r requirements.txt
 
 ### 3. Set up the .env File
 
-The repository contains a `.env.template` file. You need to save this as `.env` and then update it with your OpenAI API key:
+The repository contains a `.env.example` file. You need to save this as `.env` and then update it with your OpenAI API key:
 
 First, make a copy and rename:
 
 ```bash
-cp .env.template .env
+cp .env.example .env
 ```
 
-Then, open the `.env` file in a text editor of your choice and replace `YOUR_API_KEY` with your actual OpenAI API key.
+Then, open the `.env` file in a text editor of your choice and replace `GEMINI_API_KEY` with your actual Gemini API key.
 
 ### 4. Run the Application
 

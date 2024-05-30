@@ -19,7 +19,7 @@ git clone https://github.com/The-UnknownHacker/GhostGenerator.git
 cd GhostGenerator
 ```
 
-## 3 -  Install the required packages using `requirements.txt`:
+## 2 -  Install the required packages using `requirements.txt`:
 
 ```bash
 pip install -r requirements.txt

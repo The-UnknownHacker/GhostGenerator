@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 ### 3. Set up the .env File
 
-The repository contains a `.env.example` file. You need to save this as `.env` and then update it with your OpenAI API key:
+The repository contains a `.env.example` file. You need to save this as `.env` and then update it with you Gemini API key:
 
 First, make a copy and rename:
 

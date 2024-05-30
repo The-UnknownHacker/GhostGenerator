@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostAI Presentation Generator</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #e60000;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        form {
+            background-color: #2e2e2e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 8px;
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3e3e3e;
+            color: #f0f0f0;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #e60000;
+            color: #f0f0f0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #cc0000;
+        }
+        @media (max-width: 600px) {
+            form {
+                width: 100%;
+                padding: 15px;
+            }
+            input[type="text"],
+            input[type="number"],
+            textarea,
+            select {
+                padding: 8px;
+            }
+            input[type="submit"] {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>GhostAI Presentation Generator</h1>
+    <form action="/" method="post">
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic" name="topic" required>
+
+        <label for="num_slides">Number of Slides:</label>
+        <input type="number" id="num_slides" name="num_slides" required>
+
+        <label for="presentation_type">Presentation Type:</label>
+        <input type="text" id="presentation_type" name="presentation_type" required>
+
+        <label for="extra_details">Extra Details:</label>
+        <textarea id="extra_details" name="extra_details" rows="4" cols="50"></textarea>
+
+        <label for="creator_name">Your Name:</label>
+        <input type="text" id="creator_name" name="creator_name" required>
+
+        <label for="theme">Select Theme:</label>
+        <select id="theme" name="theme" required>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="blue">Blue</option>
+        </select>
+
+        <input type="submit" value="Generate Presentation">
+    </form>
+</body>
+</html>
